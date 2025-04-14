@@ -60,7 +60,7 @@ function displayRandomQuote() {
 
 document.addEventListener("DOMContentLoaded", () => {
     displayRandomQuote();
-    setInterval(displayRandomQuote, 3_000);
+    setInterval(displayRandomQuote, 7_000);
 
     document.body.addEventListener("click", (e) => {
         if (e.target.closest("header")) return; // ignore top bar clicks
