@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager | Mindful Productivity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-circle-dot"></i></span>
+                Focus
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="focus-tips.html">Tips</a></li>
+                    <li><a href="task-manager.html" class="active">Tasks</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-header">
+                <h1>Focus Timer & Tasks</h1>
+                <p class="subtitle">Manage your time and track your progress</p>
+            </section>
+            
+            <section class="timer-container">
+                <div class="timer-mode" id="timer-mode-indicator">
+                    <span class="current-mode">Focus Session</span>
+                </div>
+                
+                <div class="timer-display" id="timer-display">25:00</div>
+                
+                <div class="timer-progress">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                
+                <div class="timer-controls">
+                    <button class="btn btn-primary toggle-timer" id="toggle-timer">
+                        <i class="fas fa-play" id="timer-icon"></i>
+                        <span id="timer-button-text">Start</span>
+                    </button>
+                    <button class="btn" id="reset-timer">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                
+                <div class="timer-mode-selector">
+                    <button class="btn mode-btn active" id="pomodoro-btn">
+                        <i class="fas fa-brain"></i> Focus (25)
+                    </button>
+                    <button class="btn mode-btn" id="short-break-btn">
+                        <i class="fas fa-coffee"></i> Short Break (5)
+                    </button>
+                    <button class="btn mode-btn" id="long-break-btn">
+                        <i class="fas fa-couch"></i> Long Break (15)
+                    </button>
+                </div>
+            </section>
+
+            <section class="task-manager">
+                <h2>Task List</h2>
+                <p class="section-subtitle">Manage your tasks for this focus session</p>
+                
+                <form class="task-form" id="task-form">
+                    <input type="text" class="task-input" id="task-input" placeholder="What do you need to focus on?" required>
+                    <button type="submit" class="task-submit">
+                        <i class="fas fa-plus"></i> Add Task
+                    </button>
+                </form>
+                
+                <div class="task-stats">
+                    <span id="tasks-total">0 tasks</span>
+                    <span id="tasks-completed">0 completed</span>
+                </div>
+                
+                <ul class="task-list" id="task-list">
+                    <!-- Tasks will be added here dynamically -->
+                </ul>
+                
+                <div class="task-empty" id="task-empty">
+                    <i class="fas fa-clipboard-list"></i>
+                    <p>No tasks added yet. Add a task to get started.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">Focus. Mindful Productivity. 2025.</p>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="focus-tips.html">Tips</a>
+                    <a href="task-manager.html">Tasks</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tasks.js"></script>
+</body>
+</html>
