@@ -35,7 +35,14 @@ const quotes = [
     { text: "Success is the sum of small efforts, repeated day in and day out.", author: "Robert Collier" },
     { text: "It’s not about money or connections – it’s the willingness to outwork and outlearn everyone.", author: "Mark Cuban" },
     { text: "You don’t have to be extreme, just consistent.", author: "Unknown" },
-    { text: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" }
+    { text: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
+
+    
+    //idiots
+    { text: "You'll be dead if you don't lock in for the final.", author: "Masaaki Manabe" },
+    { text: "Studying is only for pussies. It's doubting your own ability", author: "Woojin Rhee" },
+    { text: "I am J.Robert Oppenheimer", author: "Seyong Park"},
+    { text: "Enjoy your life", author: "Kwanyoong Park"}
 ];
 
 // Function to display a random quote with fade effect
